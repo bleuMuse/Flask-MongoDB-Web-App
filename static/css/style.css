@@ -1,0 +1,51 @@
+.container {
+  border: 2px solid;
+  width: 75%;
+  margin: 0 auto;
+}
+
+header,
+footer,
+main {
+  padding: 5px 15px;
+}
+
+header,
+main {
+  border-bottom: 2px solid;
+  background-color: ghostwhite;
+}
+
+p.post {
+  font-size: 16px;
+  padding: 10px 10px;
+  border: 3px solid darkmagenta ;
+  border-radius: 10px;
+  background-color: #f1c0ff;
+}
+
+footer {
+  background-color: navajowhite;
+}
+
+/* .reviews {
+  padding: 20px;
+  margin: 10px;
+  background-color: #eee;
+} */
+
+a {
+  color: darkmagenta;
+  text-decoration: none;
+}  
+
+header {
+  text-align: center;
+  background-color: navajowhite;
+}
+
+.contacts {
+  line-height: 0.5; 
+  font-family: monospace;
+  text-align: center;
+}

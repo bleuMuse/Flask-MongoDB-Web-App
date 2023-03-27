@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block container %}
+<h2>Write a review </h2>
+<p>Write a review on your NYU school here!</p>
+<form method="POST" action="{{ url_for('create_post') }}">
+  <p>
+    Your name: <input type="text" id="fname" name="fname" /><br />
+  </p>
+  <p>
+    School in NYU: <input type="text" id="fschool" name="fschool" /><br />
+  </p>
+  <p>
+    Rating (0-5): <input type="int" id="frating" name="frating" /><br />
+  <p>
+  <p>
+    Review:<textarea type="text" id="fmessage" name="fmessage"></textarea>
+  </p>
+  <p>
+    <a href="{{ url_for('read')}}">Cancel</a>
+    <input type="submit" name="post-btn" value="Post" />
+  </p>
+</form>
+{% endblock %}

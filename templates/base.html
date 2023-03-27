@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rate NYU Schools</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 style="text-align: center;">Rate NYU Schools</h1>
+        <p style="text-align: center; ">
+          <a href="{{ url_for('home')}}">Home</a> |
+          <a href="{{ url_for('read')}}">All Posts</a> |
+          <a href="{{ url_for('create')}}">Make a post</a>
+        </p>
+      </header>
+      <main>{% block container %} {% endblock %}</main>
+      <footer>
+        <div class="contacts">
+          <p>Contacts</p>
+          <p>
+            James Pai: jgp390@nyu.edu
+          </p>
+          <p>
+            Madelyn O'Meara: mco9247@nyu.edu
+          </p>
+          <p>
+            Isaiah Woram: idw2005@nyu.edu
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

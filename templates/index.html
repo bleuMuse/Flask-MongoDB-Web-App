@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h2>Calling All NYU Homies</h2>
+<p>Welcome to Rate NYU Schools, a medium to openly discuss (or vent) about NYU's schools.
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('read')}}">Reviews</a> from NYU students...&#129312;</li>
+            <li>Are you a current or former NYU student? Post a review <a href="{{ url_for('create')}}">here</a></li>
+        </ul>
+    </nav>
+</p>
+{% endblock %}
